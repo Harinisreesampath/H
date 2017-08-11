@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Fynder</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet"
+              type = "text/css"
+              href = "style.css" />
+        <style>
+            body{
+                background-image: url(160625_Branchen_Header_Shopping.jpg);
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <button type="button" >Admin</button>
+        <div id="nav_box">
+
+        </div>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="fashion-clothes-wallpaper-3.jpg" style="width:100%">
+                <div class="text">Discover your style</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="maxresdefault.jpg" style="width:100%">
+                <div class="text">Grab and cart</div>
+            </div>
+             <div class="mySlides fade">
+                <img src="acc.jpg" style="width:100%">
+                <div class="text">New brands</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="bag.jpg" style="width:100%">
+                <div class="text">New brands</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="shoe.jpg" style="width:100%">
+                <div class="text">New brands</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="shop.jpg" style="width:100%">
+                <div class="text">New brands</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="ele.jpg" style="width:100%">
+                <div class="text">New offers</div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+        <div style="background: background;height: 25px">
+            <nav>
+                <a href="" style="color: whitesmoke;font-family: cursive;padding-left: 250px">CLOTHES</a>
+                <a href="" style="color: whitesmoke;font-family: cursive;padding-left: 300px">ELECTRONICS</a>
+                <a href="" style="color: whitesmoke;font-family: cursive;padding-left: 300px">ACCESSORIES</a>
+            </nav>    
+        </div>
+        <br>
+        <div style="background: background">
+            <div style="width: 300px;float: left;padding-left: 150px">
+                <a href="dress2.html" ><img src="dress2.jpg" alt="dress" style="width: 250px;height: 300px">
+                </a>  
+                <h3 style="color: whitesmoke">WHITESMOKE</h3>
+                <h2 style="color: whitesmoke">Rs.500</h2>
+     <pre style="float: left">
+  <button type="SUBMIT">Buy now</button>  <button type="SUBMIT">Cart</button>
+                </pre>
+            </div>
+            <div style="width: 300px;float: left;padding-left: 100px">
+                <a href="dress1.html" ><img src="dress1.jpg" alt="dress" style="width: 250px;height: 300px">
+                </a>  
+                <h3 style="color: whitesmoke">TRENDY</h3>
+                <h2 style="color: whitesmoke">Rs.1500</h2>
+                <pre style="float: left">
+  <button type="SUBMIT">Buy now</button>  <button type="SUBMIT">Cart</button>
+                </pre>
+            </div>
+            <div style="width: 300px;float: left;padding-left: 100px">
+                <a href="dress3.html" ><img src="dress3.jpg" alt="dress" style="width: 250px;height: 300px">
+                </a>    
+                <h3 style="color: whitesmoke">K AND Q</h3>
+                <h2 style="color: whitesmoke">Rs.300</h2>
+                <pre style="float: left">
+  <button type="SUBMIT">Buy now</button>  <button type="SUBMIT">Cart</button>
+                </pre>
+            </div>
+            <div style="width: 750px;float: right">
+                
+            </div>   
+        </div>
+        
+        <div id="acc" >
+            
+        </div>
+        
+        <div id="mobile">
+            
+        </div>
+        
+       
+        
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+                
+            }
+            
+            function text(){
+                document.getElementById("headings").display="visible";
+            }
+        </script>
+
+
+    </body>
+</html>
